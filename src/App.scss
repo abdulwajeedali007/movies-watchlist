@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 65.5%;
+  font-family: "Fira Sans", sans-serif;
+}
+button,
+::placeholder,
+input {
+  font-family: "Fira Sans", sans-serif;
+}
+// variables
+$primary__color: #3c0919;
+$scondary__color: #edae49;
+$text__color: #2b3d41;
+$light__color: #e9f1f7;
+
+body {
+  background-color: $light__color;
+}
+
+.container_fluid {
+  width: 100%;
+  height: 35rem;
+
+  background: $scondary__color;
+}
+
+// Navbar
+.navbar__container {
+  width: 100%;
+  padding: 0rem 25rem;
+  box-sizing: border-box;
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 1.4rem 0rem;
+    .left__side {
+      color: $primary__color;
+      cursor: pointer;
+    }
+    .right__side {
+      justify-self: end;
+      .hamburger__icon {
+        display: none;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        li {
+          margin: 0px 2rem;
+          .link {
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: $primary__color;
+            font-weight: 400;
+          }
+          .add {
+            background-color: $primary__color;
+            color: $light__color;
+            padding: 0.5rem 2rem;
+            border-radius: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// landing page details
+.landing__container {
+  max-width: 1200px;
+
+  margin: 5rem auto;
+  box-shadow: 0px 10px 25px -20px rgba(0, 0, 0, 1);
+
+  .img__container {
+    max-width: 1200px;
+    height: 450px;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .content__box {
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      h2 {
+        font-size: 2.8rem;
+        color: $light__color;
+        letter-spacing: 0.1rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.6rem;
+        color: $light__color;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+      }
+      .btns {
+        margin-top: 1rem;
+
+        button {
+          background: $scondary__color;
+          padding: 1rem 3rem;
+          font-size: 1.4rem;
+
+          border: none;
+          color: $primary__color;
+          font-weight: 400;
+          letter-spacing: 0.1rem;
+
+          border-radius: 0.5rem;
+          cursor: pointer;
+          box-shadow: 0px 10px 25px -20px rgba(0, 0, 0, 1);
+          margin: 0px 0.5rem;
+          border: 1px solid $scondary__color;
+          &:hover {
+            border: 1px solid $light__color;
+            color: $light__color;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+// search container
+.search__container {
+  max-width: 1200px;
+  margin: 0px auto;
+
+  text-align: center;
+
+  .search {
+    max-width: 600px;
+    margin: 0px auto;
+    input {
+      width: 100%;
+      border: 1px solid $primary__color;
+      background: transparent;
+
+      font-size: 1.4rem;
+      padding: 1rem;
+      box-sizing: border-box;
+      border-radius: 0.5rem;
+
+      color: $primary__color;
+      &::placeholder {
+        color: $primary__color;
+      }
+      &::focus {
+        outline: none;
+      }
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+}
+.item__main {
+  margin-top: 6rem;
+}
+.item__container {
+  max-width: 700px;
+  margin: 0px auto;
+  padding: 1rem 2rem;
+  display: flex;
+  margin-bottom: 1.5rem;
+  background-color: $text__color;
+  color: $light__color;
+  box-shadow: 0px 10px 15px -20px rgba(0, 0, 0, 1);
+  border-radius: 0.5rem;
+  .item__image {
+    margin-right: 2rem;
+    width: 70px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .item__content {
+    p:is(.item__title, .item__date) {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      text-align: left;
+    }
+    p.item__date {
+      font-weight: 300;
+      margin-top: 1rem;
+      .popularity {
+        background: $scondary__color;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        font-size: 1rem;
+        color: $text__color;
+      }
+    }
+    .Btn {
+      margin-top: 1rem;
+      text-align: left;
+      button {
+        background: $scondary__color;
+        color: $text__color;
+        border: none;
+
+        padding: 0.5rem 2rem;
+        font-size: 1.4rem;
+        font-weight: 300;
+        cursor: pointer;
+        border-radius: 0.3rem;
+        box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 1);
+        &:hover {
+          background: $light__color;
+        }
+        &:nth-child(1) {
+          margin-right: 1rem;
+        }
+        &:disabled {
+          background-color: $light__color;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+
+.data__loading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+
+  opacity: 0.1;
+}
+
+@media (max-width: 1200px) {
+  .navbar__container {
+    padding: 0rem 3rem;
+  }
+  .landing__container {
+    width: 90%;
+    margin: 0rem auto;
+    .img__container {
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+  .search__container {
+    margin-top: 4rem;
+  }
+}
+@media (max-width: 900px) {
+  .navbar__container {
+    padding: 0rem 2rem;
+    .navbar {
+      .right__side {
+        ul {
+          li {
+            padding: 0rem 1rem;
+            margin: 0rem 0rem;
+          }
+        }
+      }
+    }
+  }
+  .landing__container {
+    width: 100%;
+    margin: 0rem auto;
+    .img__container {
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar__container {
+    .navbar {
+      .right__side {
+        justify-self: normal;
+        position: relative;
+
+        text-align: right;
+        ul.nav__list {
+          display: block;
+          position: fixed;
+          left: 0;
+          top: -100%;
+          width: 100%;
+          height: 30%;
+          background: $scondary__color;
+
+          z-index: 5;
+
+          transition: top 0.6s linear;
+
+          li {
+            margin-bottom: 1rem;
+            text-align: center;
+
+            padding: 1rem 0rem;
+
+            a {
+              font-size: 1.6rem;
+            }
+            &:not(:last-child):hover {
+              background: $primary__color;
+              a {
+                color: $light__color;
+              }
+            }
+          }
+        }
+        ul.nav__list.active {
+          top: 6% !important;
+          transition: top 0.5s linear;
+        }
+        .hamburger__icon {
+          display: block;
+          font-size: 2rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
