@@ -2,6 +2,9 @@ import React, { useContext } from "react";
 import "../Style/Watchlist.scss";
 import { GlobalContext } from "../Context/GlobalContext";
 import MovieCart from "./MovieCart";
+import agneepath from "../Images/agneepath.jpg";
+import baaghi from "../Images/baaghi.jpg";
+import thevillain from "../Images/thevillain.jpg";
 
 function Watched() {
   const { watched } = useContext(GlobalContext);
@@ -10,15 +13,15 @@ function Watched() {
       <div className="watchlist__container">
         <div className="image__wrappers">
           <div className="image__wrapper">
-            <img src="./images/agneepath.jpg" alt="starwars" />
+            <img src={agneepath} alt="starwars" />
             <h2 className="movie__title">Agneepath</h2>
           </div>
           <div className="image__wrapper">
-            <img src="./images/baaghi.jpg" alt="spiderman" />
+            <img src={baaghi} alt="spiderman" />
             <h2 className="movie__title">Baaghi</h2>
           </div>
           <div className="image__wrapper">
-            <img src="./images/thevillain.jpg" alt="joker" />
+            <img src={thevillain} alt="joker" />
             <h2 className="movie__title">The Villain</h2>
           </div>
         </div>
