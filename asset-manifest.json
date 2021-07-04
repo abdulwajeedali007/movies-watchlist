@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/movies-watchlist/static/css/main.d32ccd83.chunk.css",
+    "main.js": "/movies-watchlist/static/js/main.5a59aa60.chunk.js",
+    "main.js.map": "/movies-watchlist/static/js/main.5a59aa60.chunk.js.map",
+    "runtime-main.js": "/movies-watchlist/static/js/runtime-main.90408dba.js",
+    "runtime-main.js.map": "/movies-watchlist/static/js/runtime-main.90408dba.js.map",
+    "static/js/2.a3a61b14.chunk.js": "/movies-watchlist/static/js/2.a3a61b14.chunk.js",
+    "static/js/2.a3a61b14.chunk.js.map": "/movies-watchlist/static/js/2.a3a61b14.chunk.js.map",
+    "index.html": "/movies-watchlist/index.html",
+    "static/css/main.d32ccd83.chunk.css.map": "/movies-watchlist/static/css/main.d32ccd83.chunk.css.map",
+    "static/js/2.a3a61b14.chunk.js.LICENSE.txt": "/movies-watchlist/static/js/2.a3a61b14.chunk.js.LICENSE.txt",
+    "static/media/agneepath.01df0b63.jpg": "/movies-watchlist/static/media/agneepath.01df0b63.jpg",
+    "static/media/baaghi.b0871517.jpg": "/movies-watchlist/static/media/baaghi.b0871517.jpg",
+    "static/media/joker.ca9200a4.jpg": "/movies-watchlist/static/media/joker.ca9200a4.jpg",
+    "static/media/movie1.c9143f10.jpg": "/movies-watchlist/static/media/movie1.c9143f10.jpg",
+    "static/media/spiderman.122445d2.jpg": "/movies-watchlist/static/media/spiderman.122445d2.jpg",
+    "static/media/starwars.f0e74e3e.jpg": "/movies-watchlist/static/media/starwars.f0e74e3e.jpg",
+    "static/media/thevillain.04ce9796.jpg": "/movies-watchlist/static/media/thevillain.04ce9796.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90408dba.js",
+    "static/js/2.a3a61b14.chunk.js",
+    "static/css/main.d32ccd83.chunk.css",
+    "static/js/main.5a59aa60.chunk.js"
+  ]
+}
